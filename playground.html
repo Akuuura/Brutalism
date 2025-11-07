@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Playground // Swiss Punk Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="playground-page">
+    <nav class="navigation">
+        <div class="nav-chaos">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="manifesto.html" class="nav-link">MANIFESTO</a>
+            <a href="gallery.html" class="nav-link">GALLERY</a>
+            <a href="playground.html" class="nav-link active">PLAYGROUND</a>
+            <a href="resources.html" class="nav-link">RESOURCES</a>
+            <a href="timeline.html" class="nav-link">TIMELINE</a>
+        </div>
+        <div class="nav-noise"></div>
+    </nav>
+
+    <main class="playground-content">
+        <header class="playground-header">
+            <h1>DESIGN PLAYGROUND</h1>
+            <p>Experiment with Swiss Punk principles in real-time</p>
+        </header>
+
+        <div class="playground-container">
+            <div class="controls-panel">
+                <h2>CONTROLS</h2>
+                
+                <div class="control-section">
+                    <h3>Typography</h3>
+                    <label>
+                        <span>Text</span>
+                        <input type="text" id="textInput" value="PUNK" maxlength="20">
+                    </label>
+                    <label>
+                        <span>Font Size: <span id="fontSizeValue">80</span>px</span>
+                        <input type="range" id="fontSize" min="20" max="200" value="80">
+                    </label>
+                    <label>
+                        <span>Rotation: <span id="rotationValue">0</span>°</span>
+                        <input type="range" id="rotation" min="-180" max="180" value="0">
+                    </label>
+                    <label>
+                        <span>Letter Spacing: <span id="spacingValue">0</span>px</span>
+                        <input type="range" id="letterSpacing" min="-10" max="50" value="0">
+                    </label>
+                </div>
+
+                <div class="control-section">
+                    <h3>Colors</h3>
+                    <div class="color-presets">
+                        <button class="color-btn" data-color="#FF0080" style="background: #FF0080;">PINK</button>
+                        <button class="color-btn" data-color="#00FF41" style="background: #00FF41;">GREEN</button>
+                        <button class="color-btn" data-color="#FFFF00" style="background: #FFFF00;">YELLOW</button>
+                        <button class="color-btn" data-color="#00FFFF" style="background: #00FFFF;">CYAN</button>
+                        <button class="color-btn" data-color="#000000" style="background: #000000; color: white;">BLACK</button>
+                        <button class="color-btn" data-color="#FFFFFF" style="background: #FFFFFF; border: 2px solid black;">WHITE</button>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3>Effects</h3>
+                    <label>
+                        <span>Glitch Intensity: <span id="glitchValue">0</span></span>
+                        <input type="range" id="glitchIntensity" min="0" max="100" value="0">
+                    </label>
+                    <label>
+                        <span>Layer Count: <span id="layerValue">1</span></span>
+                        <input type="range" id="layerCount" min="1" max="5" value="1">
+                    </label>
+                    <label>
+                        <span>Skew X: <span id="skewXValue">0</span>°</span>
+                        <input type="range" id="skewX" min="-45" max="45" value="0">
+                    </label>
+                    <label>
+                        <span>Skew Y: <span id="skewYValue">0</span>°</span>
+                        <input type="range" id="skewY" min="-45" max="45" value="0">
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="enableHalftone">
+                        <span>Halftone Effect</span>
+                    </label>
+                </div>
+
+                <div class="control-section">
+                    <h3>Grid</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="showGrid">
+                        <span>Show Grid</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="breakGrid">
+                        <span>Break Grid</span>
+                    </label>
+                </div>
+
+                <div class="control-section">
+                    <h3>Actions</h3>
+                    <button class="action-btn" id="randomize">RANDOMIZE</button>
+                    <button class="action-btn" id="reset">RESET</button>
+                    <button class="action-btn" id="addElement">ADD ELEMENT</button>
+                    <button class="action-btn export-btn" id="export">EXPORT IMAGE</button>
+                </div>
+            </div>
+
+            <div class="canvas-panel">
+                <div id="playgroundCanvas" class="playground-canvas">
+                    <div class="draggable-element" data-id="1">
+                        <span class="element-text">PUNK</span>
+                    </div>
+                </div>
+                <div class="canvas-info">
+                    <p>Click and drag elements • Use controls to modify • Export your creation</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>SWISS PUNK</h4>
+                <p>A design revolution that challenged the establishment and redefined visual communication.</p>
+            </div>
+            <div class="footer-col">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="manifesto.html">Manifesto</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>PRINCIPLES</h4>
+                <ul>
+                    <li>Break the Grid</li>
+                    <li>Deconstruct Typography</li>
+                    <li>Embrace Chaos</li>
+                    <li>Question Everything</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EST. 1978</h4>
+                <p class="footer-noise">/// STILL DISRUPTING ///</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Swiss Punk Archive. Design is Rebellion.</p>
+            <div class="footer-pattern"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="playground.js"></script>
+</body>
+</html>

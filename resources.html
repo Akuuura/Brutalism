@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources // Swiss Punk Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="resources-page">
+    <nav class="navigation">
+        <div class="nav-chaos">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="manifesto.html" class="nav-link">MANIFESTO</a>
+            <a href="gallery.html" class="nav-link">GALLERY</a>
+            <a href="playground.html" class="nav-link">PLAYGROUND</a>
+            <a href="resources.html" class="nav-link active">RESOURCES</a>
+            <a href="timeline.html" class="nav-link">TIMELINE</a>
+        </div>
+        <div class="nav-noise"></div>
+    </nav>
+
+    <main class="resources-content">
+        <header class="resources-header">
+            <h1>RESOURCES</h1>
+            <p>Tools, inspiration, and knowledge to fuel your Swiss Punk journey</p>
+        </header>
+
+        <!-- Text Punk-ifier Tool -->
+        <section class="tool-section punkifier-section">
+            <div class="section-header-full">
+                <span class="section-number">/// TOOL</span>
+                <h2>"PUNK-IFY" TEXT GENERATOR</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="punkifier-container">
+                <div class="input-area">
+                    <label for="inputText">Enter Your Text:</label>
+                    <textarea id="inputText" placeholder="Type something to punk-ify..." rows="3">REBEL</textarea>
+                    
+                    <div class="style-presets">
+                        <h3>Style Presets:</h3>
+                        <button class="preset-btn" data-style="weingart">Weingart Mode</button>
+                        <button class="preset-btn" data-style="glitch">Glitch Mode</button>
+                        <button class="preset-btn" data-style="halftone">Halftone Mode</button>
+                        <button class="preset-btn" data-style="layer">Layer Mode</button>
+                        <button class="preset-btn" data-style="chaos">Chaos Mode</button>
+                    </div>
+                    
+                    <button id="generateBtn" class="action-btn">PUNK-IFY IT!</button>
+                    <button id="downloadSVG" class="action-btn">DOWNLOAD SVG</button>
+                </div>
+                
+                <div class="output-area">
+                    <div id="punkOutput" class="punk-output">
+                        <span class="output-text" style="font-size: 80px; color: #FF0080;">REBEL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Palette Generator -->
+        <section class="palette-section">
+            <div class="section-header-full">
+                <span class="section-number">/// TOOL</span>
+                <h2>PUNK COLOR PALETTE GENERATOR</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="palette-container">
+                <button id="generatePalette" class="action-btn">GENERATE CLASHING COLORS</button>
+                
+                <div class="palette-display" id="paletteDisplay">
+                    <div class="color-swatch" style="background: #FF0080;">
+                        <span class="color-code">#FF0080</span>
+                        <button class="copy-btn" data-color="#FF0080">COPY</button>
+                    </div>
+                    <div class="color-swatch" style="background: #00FF41;">
+                        <span class="color-code">#00FF41</span>
+                        <button class="copy-btn" data-color="#00FF41">COPY</button>
+                    </div>
+                    <div class="color-swatch" style="background: #FFFF00;">
+                        <span class="color-code">#FFFF00</span>
+                        <button class="copy-btn" data-color="#FFFF00">COPY</button>
+                    </div>
+                    <div class="color-swatch" style="background: #00FFFF;">
+                        <span class="color-code">#00FFFF</span>
+                        <button class="copy-btn" data-color="#00FFFF">COPY</button>
+                    </div>
+                    <div class="color-swatch" style="background: #000000;">
+                        <span class="color-code" style="color: #FFFFFF;">#000000</span>
+                        <button class="copy-btn" data-color="#000000">COPY</button>
+                    </div>
+                </div>
+                
+                <div class="palette-info">
+                    <p>Swiss Punk embraces clashing, high-contrast colors. Click "Generate" for new combinations!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonts Section -->
+        <section class="fonts-section">
+            <div class="section-header-full">
+                <span class="section-number">/// RESOURCES</span>
+                <h2>RECOMMENDED FONTS</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="fonts-grid">
+                <div class="font-card">
+                    <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 3rem;">BEBAS NEUE</h3>
+                    <p>A bold, condensed sans-serif perfect for Swiss Punk headers and impact text.</p>
+                    <a href="https://fonts.google.com/specimen/Bebas+Neue" target="_blank" class="btn-secondary">Download</a>
+                </div>
+                
+                <div class="font-card">
+                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem;">Space Grotesk</h3>
+                    <p>Modern grotesque with character - great for body text and experimental layouts.</p>
+                    <a href="https://fonts.google.com/specimen/Space+Grotesk" target="_blank" class="btn-secondary">Download</a>
+                </div>
+                
+                <div class="font-card">
+                    <h3 style="font-family: 'Space Mono', monospace; font-size: 2rem;">Space Mono</h3>
+                    <p>Monospace font adding technical, DIY punk aesthetics to your designs.</p>
+                    <a href="https://fonts.google.com/specimen/Space+Mono" target="_blank" class="btn-secondary">Download</a>
+                </div>
+                
+                <div class="font-card">
+                    <h3 style="font-family: Arial, sans-serif; font-size: 2.5rem; font-weight: 900;">Helvetica</h3>
+                    <p>The Swiss classic - know it before you break it. Foundation of the movement.</p>
+                    <a href="https://www.linotype.com/helvetica" target="_blank" class="btn-secondary">Learn More</a>
+                </div>
+                
+                <div class="font-card">
+                    <h3 style="font-family: Arial, sans-serif; font-size: 2.5rem; letter-spacing: -2px;">Akzidenz-Grotesk</h3>
+                    <p>Pre-Helvetica Swiss grotesque. Raw, authentic, influential.</p>
+                    <a href="https://www.myfonts.com/fonts/berthold/akzidenz-grotesk/" target="_blank" class="btn-secondary">Learn More</a>
+                </div>
+                
+                <div class="font-card">
+                    <h3 style="font-family: Impact, sans-serif; font-size: 2.5rem;">IMPACT</h3>
+                    <p>Bold, loud, unapologetic - perfect for punk statements.</p>
+                    <a href="https://docs.microsoft.com/en-us/typography/font-list/impact" target="_blank" class="btn-secondary">System Font</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reading List -->
+        <section class="reading-section">
+            <div class="section-header-full">
+                <span class="section-number">/// KNOWLEDGE</span>
+                <h2>ESSENTIAL READING</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="reading-grid">
+                <div class="reading-card">
+                    <span class="book-icon">📖</span>
+                    <h3>Typography Referenced</h3>
+                    <p class="author">by Allan Haley, Richard Poulin, Jason Tselentis, Tony Seddon, Gerry Leonidas, Ina Saltz, Kathryn Henderson</p>
+                    <p class="description">Comprehensive guide to typography history including Swiss design and its evolution.</p>
+                </div>
+                
+                <div class="reading-card">
+                    <span class="book-icon">📖</span>
+                    <h3>How to Use Graphic Design to Sell Things</h3>
+                    <p class="author">by Michael Bierut</p>
+                    <p class="description">Insights from a master designer on breaking rules effectively.</p>
+                </div>
+                
+                <div class="reading-card">
+                    <span class="book-icon">📖</span>
+                    <h3>The New Typography</h3>
+                    <p class="author">by Jan Tschichold</p>
+                    <p class="description">Foundational text on modernist design - understand the rules before breaking them.</p>
+                </div>
+                
+                <div class="reading-card">
+                    <span class="book-icon">📖</span>
+                    <h3>Grid Systems in Graphic Design</h3>
+                    <p class="author">by Josef Müller-Brockmann</p>
+                    <p class="description">The definitive guide to Swiss grid systems - learn them to break them.</p>
+                </div>
+                
+                <div class="reading-card">
+                    <span class="book-icon">📄</span>
+                    <h3>Wolfgang Weingart: Typography</h3>
+                    <p class="author">by Wolfgang Weingart</p>
+                    <p class="description">The godfather's own exploration of experimental typography.</p>
+                </div>
+                
+                <div class="reading-card">
+                    <span class="book-icon">📄</span>
+                    <h3>Emigre Magazine Archive</h3>
+                    <p class="author">Emigre</p>
+                    <p class="description">Experimental design publication that pushed boundaries in the digital age.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Resources -->
+        <section class="video-section">
+            <div class="section-header-full">
+                <span class="section-number">/// WATCH & LEARN</span>
+                <h2>DOCUMENTARIES & TALKS</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumb">🎬</div>
+                    <h3>Helvetica</h3>
+                    <p>Documentary about the typeface and Swiss design philosophy. Essential viewing.</p>
+                    <span class="video-duration">80 min</span>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb">🎬</div>
+                    <h3>Objectified</h3>
+                    <p>Design documentary exploring form, function, and rebellion in modern design.</p>
+                    <span class="video-duration">75 min</span>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb">🎬</div>
+                    <h3>Abstract: The Art of Design</h3>
+                    <p>Netflix series featuring experimental designers and their processes.</p>
+                    <span class="video-duration">Series</span>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumb">🎥</div>
+                    <h3>Sagmeister & Walsh Talks</h3>
+                    <p>Various talks on experimental design and breaking conventions.</p>
+                    <span class="video-duration">Various</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspiration -->
+        <section class="inspiration-section">
+            <div class="section-header-full">
+                <span class="section-number">/// INSPIRATION</span>
+                <h2>BRANDS USING SWISS PUNK</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <h3>Balenciaga</h3>
+                    <p>Fashion brand embracing deconstructed typography and bold graphics in recent campaigns.</p>
+                </div>
+                
+                <div class="brand-card">
+                    <h3>Supreme</h3>
+                    <p>Streetwear brand built on bold, in-your-face graphics and punk attitude.</p>
+                </div>
+                
+                <div class="brand-card">
+                    <h3>Spotify (wrapped campaigns)</h3>
+                    <p>Annual campaigns featuring bold, clashing colors and experimental layouts.</p>
+                </div>
+                
+                <div class="brand-card">
+                    <h3>MTV</h3>
+                    <p>Historic use of deconstructed, chaotic design - pioneering punk aesthetics in media.</p>
+                </div>
+                
+                <div class="brand-card">
+                    <h3>Garage Magazine</h3>
+                    <p>Fashion publication with experimental, punk-influenced art direction.</p>
+                </div>
+                
+                <div class="brand-card">
+                    <h3>Palace Skateboards</h3>
+                    <p>Skate brand mixing Swiss design precision with punk chaos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Playlist -->
+        <section class="music-section">
+            <div class="section-header-full">
+                <span class="section-number">/// SOUNDTRACK</span>
+                <h2>DESIGN TO THIS</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="playlist-container">
+                <h3>🎵 Swiss Punk Design Playlist</h3>
+                <p>Music that embodies the spirit of rebellion and experimentation</p>
+                
+                <div class="track-list">
+                    <div class="track-item">
+                        <span class="track-number">01</span>
+                        <span class="track-info">God Save the Queen - Sex Pistols</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">02</span>
+                        <span class="track-info">Blitzkrieg Bop - Ramones</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">03</span>
+                        <span class="track-info">Blue Monday - New Order</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">04</span>
+                        <span class="track-info">Trans-Europe Express - Kraftwerk</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">05</span>
+                        <span class="track-info">Warm Leatherette - The Normal</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">06</span>
+                        <span class="track-info">Love Will Tear Us Apart - Joy Division</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">07</span>
+                        <span class="track-info">Plastic Dreams - Jaydee</span>
+                    </div>
+                    <div class="track-item">
+                        <span class="track-number">08</span>
+                        <span class="track-info">Toccata - Sky</span>
+                    </div>
+                </div>
+                
+                <p class="playlist-note">Search "Swiss Punk Design" on Spotify for curated playlists!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>SWISS PUNK</h4>
+                <p>A design revolution that challenged the establishment and redefined visual communication.</p>
+            </div>
+            <div class="footer-col">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="manifesto.html">Manifesto</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>PRINCIPLES</h4>
+                <ul>
+                    <li>Break the Grid</li>
+                    <li>Deconstruct Typography</li>
+                    <li>Embrace Chaos</li>
+                    <li>Question Everything</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EST. 1978</h4>
+                <p class="footer-noise">/// STILL DISRUPTING ///</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Swiss Punk Archive. Design is Rebellion.</p>
+            <div class="footer-pattern"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="resources.js"></script>
+</body>
+</html>
