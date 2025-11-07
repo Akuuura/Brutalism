@@ -56,6 +56,7 @@ body {
     gap: 2rem;
     padding: 1.5rem 2rem;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -1296,14 +1297,31 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav-chaos {
-        gap: 1rem;
-        padding: 1rem;
+        gap: 1.2rem;
     }
     
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-chaos {
+        gap: 0.5rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .nav-link.active::before {
+        left: -15px;
     }
     
     .hero-section {
